@@ -1,5 +1,6 @@
 kernel/arch/arm64/kvm/kvm.ko
 kernel/arch/arm64/gunyah/gunyah_hypercall.ko
+kernel/arch/arm64/crypto/sha1-ce.ko
 kernel/arch/arm64/crypto/sha2-ce.ko
 kernel/arch/arm64/crypto/sha512-ce.ko
 kernel/arch/arm64/crypto/ghash-ce.ko

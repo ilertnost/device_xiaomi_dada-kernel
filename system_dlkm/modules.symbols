@@ -1,6 +1,7 @@
 # Aliases for symbols, used by symbol_request().
 alias symbol:kunit_destroy_resource kunit
 alias symbol:usbnet_get_msglevel usbnet
+alias symbol:l2tp_tunnel_put l2tp_core
 alias symbol:vp_modern_get_status virtio_pci_modern_dev
 alias symbol:slhc_free slhc
 alias symbol:hci_conn_check_secure bluetooth
@@ -42,7 +43,6 @@ alias symbol:lowpan_nhc_add 6lowpan
 alias symbol:qca_set_bdaddr_rome btqca
 alias symbol:usbnet_set_msglevel usbnet
 alias symbol:v9fs_register_trans 9pnet
-alias symbol:l2tp_session_inc_refcount l2tp_core
 alias symbol:ieee802154_hdr_peek ieee802154
 alias symbol:slhc_uncompress slhc
 alias symbol:kunit_suite_num_test_cases kunit
@@ -61,7 +61,6 @@ alias symbol:zs_malloc zsmalloc
 alias symbol:bt_accept_unlink bluetooth
 alias symbol:alloc_can_skb can_dev
 alias symbol:usbnet_set_rx_mode usbnet
-alias symbol:l2tp_tunnel_dec_refcount l2tp_core
 alias symbol:hci_uart_unregister_device hci_uart
 alias symbol:usb_serial_generic_get_icount usbserial
 alias symbol:hci_uart_tx_wakeup hci_uart
@@ -87,7 +86,6 @@ alias symbol:l2tp_tunnel_get_nth l2tp_core
 alias symbol:of_can_transceiver can_dev
 alias symbol:ieee802154_mac_cmd_push ieee802154
 alias symbol:l2cap_register_user bluetooth
-alias symbol:l2tp_tunnel_inc_refcount l2tp_core
 alias symbol:l2cap_is_socket bluetooth
 alias symbol:usbnet_cdc_update_filter cdc_ether
 alias symbol:btbcm_check_bdaddr btbcm
@@ -127,6 +125,7 @@ alias symbol:kunit_test_case_num kunit
 alias symbol:vp_modern_generation virtio_pci_modern_dev
 alias symbol:can_bus_off can_dev
 alias symbol:kunit_add_action kunit
+alias symbol:usbnet_generic_cdc_bind cdc_ether
 alias symbol:qca_read_soc_version btqca
 alias symbol:alloc_canfd_skb can_dev
 alias symbol:rfkill_alloc rfkill
@@ -231,6 +230,7 @@ alias symbol:usbnet_disconnect usbnet
 alias symbol:kunit_fail_assert_format kunit
 alias symbol:kunit_remove_action kunit
 alias symbol:wpan_phy_unregister ieee802154
+alias symbol:l2tp_session_put l2tp_core
 alias symbol:can_ethtool_op_get_ts_info_hwts can_dev
 alias symbol:l2tp_tunnel_register l2tp_core
 alias symbol:bt_procfs_init bluetooth
@@ -238,7 +238,6 @@ alias symbol:kunit_kmalloc_array kunit
 alias symbol:bt_sock_register bluetooth
 alias symbol:usbnet_get_drvinfo usbnet
 alias symbol:wwan_port_rx wwan
-alias symbol:l2tp_session_dec_refcount l2tp_core
 alias symbol:ptp_schedule_worker ptp
 alias symbol:rfkill_unregister rfkill
 alias symbol:hci_get_route bluetooth
@@ -293,6 +292,7 @@ alias symbol:unregister_pppox_proto pppox
 alias symbol:vp_legacy_remove virtio_pci_legacy_dev
 alias symbol:ppp_register_compressor ppp_generic
 alias symbol:can_rx_offload_add_manual can_dev
+alias symbol:can_get_echo_skb can_dev
 alias symbol:bt_sock_poll bluetooth
 alias symbol:can_rx_offload_irq_offload_timestamp can_dev
 alias symbol:open_candev can_dev
@@ -300,6 +300,7 @@ alias symbol:__hci_cmd_send bluetooth
 alias symbol:bt_sock_wait_state bluetooth
 alias symbol:rfkill_resume_polling rfkill
 alias symbol:wwan_remove_port wwan
+alias symbol:usbnet_cdc_zte_rx_fixup cdc_ether
 alias symbol:bt_sock_alloc bluetooth
 alias symbol:hci_uart_register_device_priv hci_uart
 alias symbol:rfkill_find_type rfkill
